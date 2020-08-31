@@ -1,11 +1,7 @@
 import React from 'react';
+import { IDataColor } from '../../interfaces';
 
-interface IData {
-  colorName: string;
-  hexcode: string;
-}
-
-const ColorBox = (props: IData) => {
+const ColorBox = (props: IDataColor) => {
   const { hexcode, colorName } = props;
   return (
     <div>
@@ -15,15 +11,12 @@ const ColorBox = (props: IData) => {
           margin: '10px',
           width: '100px',
           height: '40px',
-          backgroundColor: hexcode
+          backgroundColor: hexcode,
         }}
-      >
-      </div>
-      <div>
-        {colorName}
-      </div>
+      ></div>
+      <div>{colorName}</div>
     </div>
-  )
-}
+  );
+};
 
 export default ColorBox;

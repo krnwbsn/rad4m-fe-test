@@ -1,20 +1,9 @@
 import React, { useState } from 'react';
 import ColorBox from '../ColorBox';
-
-interface IData {
-  id: number;
-  colorName: string;
-  hexcode: string;
-  saturation: number;
-  category: string;
-}
-
-interface IProps {
-  data: IData[];
-}
+import { IDataColors, IProps } from '../../interfaces';
 
 const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
-  const [search, setSearch] = useState<IData[] | null>([]);
+  const [search, setSearch] = useState<IDataColors[] | null>([]);
 
   const filter = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const { value } = event.currentTarget;
@@ -22,10 +11,12 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
     if (value === '') {
       setSearch([]);
     } else if (value !== '') {
-      const getData = data.filter((result: any) => result.category.toLowerCase() === value);
+      const getData = data.filter(
+        (result: any) => result.category.toLowerCase() === value
+      );
       setSearch(getData);
     }
-  }
+  };
 
   const check = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { checked } = event.target;
@@ -33,42 +24,45 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
     if (search && search.length > 0 && !checked) {
       setSearch([]);
     } else if (search && search.length > 0 && checked) {
-      const getData = (search && search.length > 0 ? search : data).filter((result: any) => result.saturation <= 60);
+      const getData = (search && search.length > 0 ? search : data).filter(
+        (result: any) => result.saturation <= 60
+      );
       setSearch(getData);
-    }  
-  }
+    }
+  };
 
   const reset = (event: React.MouseEvent<HTMLButtonElement>) => {
     setSearch([]);
-  }
+  };
 
-  const colors = (
-    (search && search.length > 0 ? search : data).map((result: any) =>
-      <ColorBox
-        key={result.id}
-        hexcode={result.hexcode}
-        colorName={result.colorName}
-      />
-    ))
+  const colors = (search && search.length > 0
+    ? search
+    : data
+  ).map((result: any) => (
+    <ColorBox
+      key={result.id}
+      hexcode={result.hexcode}
+      colorName={result.colorName}
+    />
+  ));
 
   return (
     <div
       style={{
         textAlign: 'left',
-        padding: '10px'
-      }}>
+        padding: '10px',
+      }}
+    >
       <div>
         <form
           style={{
             marginLeft: '10px',
           }}
         >
-          <label>
-            Select the color category: {' '}
-          </label>
+          <label>Select the color category: </label>
           <select
             style={{
-              width: 'auto'
+              width: 'auto',
             }}
             onChange={filter}
           >
@@ -84,17 +78,15 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
           </select>
           <input
             style={{
-              marginLeft: '20px'
+              marginLeft: '20px',
             }}
             type="checkbox"
             onChange={check}
           />
-          <label>
-            Darker
-          </label>
+          <label>Darker</label>
           <button
             style={{
-              marginLeft: '20px'
+              marginLeft: '20px',
             }}
             onClick={reset}
           >
@@ -107,13 +99,13 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
           display: 'flex',
           width: '640px',
           textAlign: 'center',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
         }}
       >
         {colors}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ColorList;
