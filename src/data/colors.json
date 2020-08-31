@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "colorName": "Black",
+    "hexcode": "#000000",
+    "saturation": 0,
+    "category": "other"
+  },
+  {
+    "id": 2,
+    "colorName": "White",
+    "hexcode": "#ffffff",
+    "saturation": 100,
+    "category": "other"
+  },
+  {
+    "id": 3,
+    "colorName": "Red",
+    "hexcode": "#ff0000",
+    "saturation": 100,
+    "category": "red"
+  },
+  {
+    "id": 4,
+    "colorName": "Lime",
+    "hexcode": "#32cd32",
+    "saturation": 61,
+    "category": "green"
+  },
+  {
+    "id": 5,
+    "colorName": "Blue",
+    "hexcode": "#0000ff",
+    "saturation": 100,
+    "category": "blue"
+  },
+  {
+    "id": 6,
+    "colorName": "Yellow",
+    "hexcode": "#ffff00",
+    "saturation": 100,
+    "category": "yellow"
+  },
+  {
+    "id": 7,
+    "colorName": "Cyan",
+    "hexcode": "#00ffff",
+    "saturation": 100,
+    "category": "blue"
+  },
+  {
+    "id": 8,
+    "colorName": "Magenta",
+    "hexcode": "#ff00ff",
+    "saturation": 100,
+    "category": "purple"
+  },
+  {
+    "id": 9,
+    "colorName": "Silver",
+    "hexcode": "#cccccc",
+    "saturation": 0,
+    "category": "gray"
+  },
+  {
+    "id": 10,
+    "colorName": "Gray",
+    "hexcode": "#bebebe",
+    "saturation": 0,
+    "category": "gray"
+  },
+  {
+    "id": 11,
+    "colorName": "Maroon",
+    "hexcode": "#b03060",
+    "saturation": 57,
+    "category": "red"
+  },
+  {
+    "id": 12,
+    "colorName": "Olive",
+    "hexcode": "#6b8e23",
+    "saturation": 60,
+    "category": "green"
+  },
+  {
+    "id": 13,
+    "colorName": "Green",
+    "hexcode": "#00ff00",
+    "saturation": 100,
+    "category": "green"
+  },
+  {
+    "id": 14,
+    "colorName": "Purple",
+    "hexcode": "#a020f0",
+    "saturation": 87,
+    "category": "purple"
+  },
+  {
+    "id": 15,
+    "colorName": "Teal",
+    "hexcode": "#008080",
+    "saturation": 100,
+    "category": "blue"
+  },
+  {
+    "id": 16,
+    "colorName": "Navy",
+    "hexcode": "#000080",
+    "saturation": 100,
+    "category": "blue"
+  },
+  {
+    "id": 17,
+    "colorName": "Pink",
+    "hexcode": "#ffc0cb",
+    "saturation": 100,
+    "category": "pink"
+  },
+  {
+    "id": 18,
+    "colorName": "Orchid",
+    "hexcode": "#da70d6",
+    "saturation": 59,
+    "category": "pink"
+  },
+  {
+    "id": 19,
+    "colorName": "Brown",
+    "hexcode": "#a52a2a",
+    "saturation": 59,
+    "category": "brown"
+  },
+  {
+    "id": 20,
+    "colorName": "Lavender",
+    "hexcode": "#e6e6fa",
+    "saturation": 67,
+    "category": "gray"
+  },
+  {
+    "id": 21,
+    "colorName": "Slate Gray",
+    "hexcode": "#2f4f4f",
+    "saturation": 25,
+    "category": "gray"
+  },
+  {
+    "id": 22,
+    "colorName": "Khaki",
+    "hexcode": "#f0e68c",
+    "saturation": 77,
+    "category": "yellow"
+  },
+  {
+    "id": 23,
+    "colorName": "Gold",
+    "hexcode": "#ffd700",
+    "saturation": 100,
+    "category": "yellow"
+  },
+  {
+    "id": 24,
+    "colorName": "Ivory",
+    "hexcode": "#eeeee0",
+    "saturation": 29,
+    "category": "gray"
+  },
+  {
+    "id": 25,
+    "colorName": "Medium",
+    "hexcode": "#66cdaa",
+    "saturation": 51,
+    "category": "blue"
+  },
+  {
+    "id": 26,
+    "colorName": "Peach",
+    "hexcode": "#ffdab9",
+    "saturation": 100,
+    "category": "pink"
+  },
+  {
+    "id": 27,
+    "colorName": "Plum",
+    "hexcode": "#dda0dd",
+    "saturation": 47,
+    "category": "pink"
+  },
+  {
+    "id": 28,
+    "colorName": "Light Blue",
+    "hexcode": "#87ceeb",
+    "saturation": 71,
+    "category": "blue"
+  },
+  {
+    "id": 29,
+    "colorName": "Tan",
+    "hexcode": "#d2b48c",
+    "saturation": 44,
+    "category": "brown"
+  },
+  {
+    "id": 30,
+    "colorName": "Tomato",
+    "hexcode": "#ff6347",
+    "saturation": 100,
+    "category": "red"
+  },
+  {
+    "id": 31,
+    "colorName": "Pale Green",
+    "hexcode": "#98fb98",
+    "saturation": 93,
+    "category": "green"
+  },
+  {
+    "id": 32,
+    "colorName": "Misty",
+    "hexcode": "#ffe4e1",
+    "saturation": 100,
+    "category": "gray"
+  },
+  {
+    "id": 33,
+    "colorName": "Light Green",
+    "hexcode": "#54ff9f",
+    "saturation": 100,
+    "category": "green"
+  },
+  {
+    "id": 34,
+    "colorName": "Salmon",
+    "hexcode": "#fa8072",
+    "saturation": 93,
+    "category": "pink"
+  },
+  {
+    "id": 35,
+    "colorName": "Violet",
+    "hexcode": "#ee82ee",
+    "saturation": 76,
+    "category": "purple"
+  },
+  {
+    "id": 36,
+    "colorName": "Sea Green",
+    "hexcode": "#43cd80",
+    "saturation": 58,
+    "category": "green"
+  },
+  {
+    "id": 37,
+    "colorName": "Thistle",
+    "hexcode": "#d8bfd8",
+    "saturation": 24,
+    "category": "purple"
+  },
+  {
+    "id": 38,
+    "colorName": "Turquoise",
+    "hexcode": "#40e0d0",
+    "saturation": 72,
+    "category": "blue"
+  },
+  {
+    "id": 39,
+    "colorName": "Wheat",
+    "hexcode": "#f5deb3",
+    "saturation": 77,
+    "category": "brown"
+  },
+  {
+    "id": 40,
+    "colorName": "Yellow Green",
+    "hexcode": "#9acd32",
+    "saturation": 61,
+    "category": "green"
+  }
+]
