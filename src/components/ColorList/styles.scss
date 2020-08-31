@@ -1,0 +1,22 @@
+.container {
+  text-align: left;
+  padding: 10px;
+  .form {
+    margin-left: 10px;
+    .select {
+      width: auto;
+    }
+    .input {
+      margin-left: 20px;
+    }
+    .button {
+      margin-left: 20px;
+    }
+  }
+  .colors-list {
+    display: flex;
+    width: 640px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}

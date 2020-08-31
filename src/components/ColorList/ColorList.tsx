@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ColorBox from '../ColorBox';
 import { IDataColors, IProps } from '../../interfaces';
+import './styles.scss';
 
 const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
   const [search, setSearch] = useState<IDataColors[] | null>([]);
@@ -47,25 +48,11 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
   ));
 
   return (
-    <div
-      style={{
-        textAlign: 'left',
-        padding: '10px',
-      }}
-    >
+    <div className="container">
       <div>
-        <form
-          style={{
-            marginLeft: '10px',
-          }}
-        >
+        <form className="form">
           <label>Select the color category: </label>
-          <select
-            style={{
-              width: 'auto',
-            }}
-            onChange={filter}
-          >
+          <select className="select" onChange={filter}>
             <option value="">All</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
@@ -76,34 +63,14 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
             <option value="purple">Purple</option>
             <option value="pink">Pink</option>
           </select>
-          <input
-            style={{
-              marginLeft: '20px',
-            }}
-            type="checkbox"
-            onChange={check}
-          />
+          <input className="input" type="checkbox" onChange={check} />
           <label>Darker</label>
-          <button
-            style={{
-              marginLeft: '20px',
-            }}
-            onClick={reset}
-          >
+          <button className="button" onClick={reset}>
             Reset
           </button>
         </form>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          width: '640px',
-          textAlign: 'center',
-          flexWrap: 'wrap',
-        }}
-      >
-        {colors}
-      </div>
+      <div className="colors-list">{colors}</div>
     </div>
   );
 };

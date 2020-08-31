@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import data from './data/colors.json';
 import { ColorList } from './components';
 
