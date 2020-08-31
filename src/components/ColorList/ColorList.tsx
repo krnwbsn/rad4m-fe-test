@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import ColorBox from '../ColorBox';
-import { IDataColors, IProps } from '../../interfaces';
+import { IDataColors, IPropsDataColors } from '../../interfaces';
 import './styles.scss';
 
-const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
+const ColorList: React.FunctionComponent<IPropsDataColors> = ({ data }) => {
   const [search, setSearch] = useState<IDataColors[] | null>([]);
 
   const filter = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const { value } = event.currentTarget;
 
-    if (value === '') {
+    if (value === 'all') {
       setSearch([]);
-    } else if (value !== '') {
+    } else if (value !== 'all') {
       const getData = data.filter(
         (result: any) => result.category.toLowerCase() === value
       );
@@ -53,7 +53,7 @@ const ColorList: React.FunctionComponent<IProps> = ({ data }) => {
         <form className="form">
           <label>Select the color category: </label>
           <select className="select" onChange={filter}>
-            <option value="">All</option>
+            <option value="all">All</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
             <option value="yellow">Yellow</option>

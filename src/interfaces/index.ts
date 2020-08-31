@@ -6,7 +6,7 @@ export interface IDataColors {
   category: string;
 }
 
-export interface IProps {
+export interface IPropsDataColors {
   data: IDataColors[];
 }
 

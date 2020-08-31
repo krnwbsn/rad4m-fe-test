@@ -1,16 +1,14 @@
 import React from 'react';
 import { IDataColor } from '../../interfaces';
+import './styles.scss';
 
 const ColorBox = (props: IDataColor) => {
   const { hexcode, colorName } = props;
   return (
     <div>
       <div
+        className="color-box"
         style={{
-          border: '1px solid #000',
-          margin: '10px',
-          width: '100px',
-          height: '40px',
           backgroundColor: hexcode,
         }}
       ></div>
